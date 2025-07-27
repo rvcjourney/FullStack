@@ -6,10 +6,8 @@ It serves as a mini frontend e-commerce layout with basic product display and st
 
 ## 📂 Project Structure
 
-FullStack/
-├── docs/
-│ └── index.html
-├── README.md
+FullStack/docs/index.html
+         /README.md
 
 ---
 
@@ -27,6 +25,7 @@ FullStack/
 
 <img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/661d0a5f-b8aa-41d6-bbf9-2e0a5f73e9f6" />
 
+-----
 
 👨‍💻 Author
 Rameshwar Vishwakarma
