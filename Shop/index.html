@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISHWAKARMA PLYWOOD & HARDWARE | Premium Building Materials</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #ff9800;
+      --dark-color: #333;
+      --light-color: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--dark-color);
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary-custom {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+
+    .btn-primary-custom:hover {
+      background-color: #1b5e20;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #128C7E;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 50px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      background-color: var(--secondary-color);
+      bottom: -10px;
+      left: 25%;
+    }
+
+    .feature-card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .feature-card .card-body {
+      padding: 25px;
+    }
+
+    .feature-card .card-title {
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .testimonial-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin: 15px;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+    }
+
+    .contact-info i {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+
+    .footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 50px 0 20px;
+    }
+
+    .footer-links h5 {
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+      padding-left: 5px;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 15px;
+      transition: all 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--secondary-color);
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      border-top: 1px solid #555;
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 60px;
+      font-size: 2rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      transition: all 0.3s;
+    }
+
+    .floating-whatsapp:hover {
+      background-color: #128C7E;
+      transform: scale(1.1);
+    }
+
+    .product-carousel {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+
+    .slick-slide {
+      padding: 0 15px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: var(--primary-color);
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-title {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-weight: 700;
+      color: var(--dark-color);
+      margin-bottom: 15px;
+    }
+
+    .btn-product {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .btn-product:hover {
+      background-color: #e65100;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">VISHWAKARMA PLYWOOD & HARDWARE</h1>
+      <p class="hero-subtitle">Premium Quality Building Materials for Your Dream Projects</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="tel:+919623115905" class="btn btn-primary-custom">
+          <i class="fas fa-phone me-2"></i> Call Now
+        </a>
+        <a href="https://wa.me/919623115905" target="_blank" class="btn btn-primary-custom btn-whatsapp">
+          <i class="fab fa-whatsapp me-2"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">About Us</h2>
+          <p class="lead">With over 15 years of experience in the industry, Vishwakarma Plywood & Hardware has
+            established itself as a trusted name for quality building materials.</p>
+          <p>We specialize in providing premium plywood, laminates, hardware, and all your construction needs. Our
+            commitment to quality and customer satisfaction has made us the preferred choice for homeowners,
+            contractors, and architects alike.</p>
+          <div class="mt-4">
+            <a href="#contact" class="btn btn-primary-custom me-3">Contact Us</a>
+            <a href="#products" class="btn btn-outline-secondary">Our Products</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Plywood Store" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Carousel -->
+  <section id="products" class="product-carousel">
+    <div class="container">
+      <h2 class="section-title text-center">Our Featured Products</h2>
+      <div class="slick-slider">
+        <div class="product-card">
+          <img src="https://www.centuryply.com/uploads/1_b5baec49a4.png" alt="Plywood" class="product-img">
+          <div class="product-info">
+            <h3 class="product-title">Premium Plywood</h3>
+            <p class="product-price">Starting at ₹850/sheet</p>
+            <a href="https://wa.me/919623115905?text=I'm%20interested%20in%20your%20premium%20plywood"
+              class="btn btn-product">Enquire Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://www.centuryply.com/uploads/Adobe_Stock_489439413_ab1d1dd8cd.png" alt="Laminates"
+            class="product-img">
+          <div class="product-info">
+            <h3 class="product-title">Decorative Laminates</h3>
+            <p class="product-price">Starting at ₹120/sq.ft</p>
+            <a href="https://wa.me/919623115905?text=I'm%20interested%20in%20your%20decorative%20laminates"
+              class="btn btn-product">Enquire Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://www.centuryply.com/uploads/Adobe_Stock_1217647573_6404a88457.png" alt="Hardware"
+            class="product-img">
+          <div class="product-info">
+            <h3 class="product-title">Quality Hardware</h3>
+            <p class="product-price">Wide range available</p>
+            <a href="https://wa.me/919623115905?text=I'm%20interested%20in%20your%20hardware%20products"
+              class="btn btn-product">Enquire Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://www.centuryply.com/uploads/7_1_a20951d8f2.jpg" alt="Doors" class="product-img">
+          <div class="product-info">
+            <h3 class="product-title">Interior Doors</h3>
+            <p class="product-price">Starting at ₹5,500</p>
+            <a href="https://wa.me/919623115905?text=I'm%20interested%20in%20your%20interior%20doors"
+              class="btn btn-product">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Why Choose Us</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="https://www.centuryply.com/uploads/1_c963c5ac82.png" class="card-img-top" alt="Quality Materials">
+            <div class="card-body">
+              <h5 class="card-title">Premium Quality</h5>
+              <p class="card-text">We source only the highest quality materials from trusted manufacturers to ensure
+                durability and longevity.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="Competitive Pricing">
+            <div class="card-body">
+              <h5 class="card-title">Competitive Pricing</h5>
+              <p class="card-text">Get the best value for your money with our competitive prices and regular discounts
+                for bulk orders.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="Expert Advice">
+            <div class="card-body">
+              <h5 class="card-title">Expert Advice</h5>
+              <p class="card-text">Our knowledgeable staff can guide you in selecting the right materials for your
+                specific needs and budget.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">What Our Customers Say</h2>
+      <div class="slick-slider">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The quality of plywood I purchased from Vishwakarma Plywood & Hardware exceeded
+            my expectations. Their prices are reasonable and the service is excellent!"</p>
+          <p class="testimonial-author">- Rajesh Kumar, Contractor</p>
+          <div class="rating">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"I was impressed with their vast selection of laminates. The staff helped me
+            choose the perfect design for my kitchen cabinets. Highly recommended!"</p>
+          <p class="testimonial-author">- Priya Sharma, Homeowner</p>
+          <div class="rating">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"As an architect, I frequently source materials from Vishwakarma. Their consistent
+            quality and reliable delivery make them my go-to supplier."</p>
+          <p class="testimonial-author">- Amit Patel, Architect</p>
+          <div class="rating">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">Contact Us</h2>
+          <div class="contact-info">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h5>Our Location</h5>
+                <p>Hevan Park,Sr.No.46/1/6,Mohammadwadi,Hadapsar,Pune-411028</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h5>Phone</h5>
+                <p><a href="tel:+919623115905">+91 9422943253 / 8668285828</a></p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h5>Email</h5>
+                <p><a href="mailto:info@vishwakarmaply.com">info@vishwakarmaply.com</a></p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h5>Working Hours</h5>
+                <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card shadow">
+            <div class="card-body p-4">
+              <h3 class="card-title mb-4">Send Us a Message</h3>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Your Phone" required>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h3 class="text-white mb-4">VISHWAKARMA PLYWOOD & HARDWARE</h3>
+          <p>Your trusted partner for quality building materials since 2008. We provide the best products at competitive
+            prices with exceptional customer service.</p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-links">Products</h5>
+          <div class="d-flex flex-column">
+            <a href="#" class="mb-1">Plywood</a>
+            <a href="#" class="mb-1">Laminates</a>
+            <a href="#" class="mb-1">Hardware</a>
+            <a href="#" class="mb-1">Doors</a>
+            <a href="#" class="mb-1">Flooring</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-links">Services</h5>
+          <div class="d-flex flex-column">
+            <a href="#" class="mb-1">Consultation</a>
+            <a href="#" class="mb-1">Delivery</a>
+            <a href="#" class="mb-1">Installation</a>
+            <a href="#" class="mb-1">Custom Orders</a>
+            <a href="#" class="mb-1">Bulk Discounts</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-links">Company</h5>
+          <div class="d-flex flex-column">
+            <a href="#" class="mb-1">About Us</a>
+            <a href="#" class="mb-1">Our Team</a>
+            <a href="#" class="mb-1">Testimonials</a>
+            <a href="#" class="mb-1">Gallery</a>
+            <a href="#" class="mb-1">Careers</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-links">Support</h5>
+          <div class="d-flex flex-column">
+            <a href="#" class="mb-1">Contact Us</a>
+            <a href="#" class="mb-1">FAQs</a>
+            <a href="#" class="mb-1">Returns</a>
+            <a href="#" class="mb-1">Privacy Policy</a>
+            <a href="#" class="mb-1">Terms of Service</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="copyright text-center text-md-start align-items-center">
+            <p class="mb-0">&copy; 2025 VISHWAKARMA PLYWOOD & HARDWARE. All Rights Reserved.</p>
+          </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919623115905" target="_blank" class="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Product Carousel
+      $('.product-carousel .slick-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+
+      // Testimonials Carousel
+      $('.testimonials .slick-slider').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000
+      });
+
+      // Smooth scrolling for anchor links
+      $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate(
+          {
+            scrollTop: $($(this).attr('href')).offset().top,
+          },
+          500,
+          'linear'
+        );
+      });
+    });
+  </script>
+</body>
+
+</html>
